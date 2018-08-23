@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            app:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="5dp"
+            card_view:cardMaxElevation="1dp"
+            card_view:cardPreventCornerOverlap="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+
+                        <ImageView
+                            android:id="@+id/posterImage"
+                            android:layout_width="300dp"
+                            android:layout_height="127dp" />
+
+
+                        <TextView
+                            android:id="@+id/en_jp"
+                            android:layout_width="300dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/posterImage"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.049" />
+
+                        <TextView
+                            android:id="@+id/ja_jp"
+                            android:layout_width="250dp"
+                            android:layout_height="45dp"
+                            android:layout_toRightOf="@+id/posterImage"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/en_jp"
+                            app:layout_constraintVertical_bias="0.555" />
+
+                        <com.like.LikeButton
+                            android:id="@+id/toogle"
+                            android:layout_width="35dp"
+                            android:layout_height="33dp"
+                            app:icon_size="25dp"
+                            app:icon_type= "heart"
+                            app:like_drawable="@drawable/thumb_on"
+                            app:unlike_drawable="@drawable/thumb_on"/>
+
+
+                </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+

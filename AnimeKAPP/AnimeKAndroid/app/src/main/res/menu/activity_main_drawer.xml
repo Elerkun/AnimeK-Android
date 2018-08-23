@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favorite"
+            android:title="Favorites" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_store"
+            android:icon="@drawable/ic_store"
+            android:title="Store" />
+    </group>
+    <item android:title="Anime">
+        <menu>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_trending"
+            android:icon="@drawable/ic_trending_this_week"
+            android:title="Trending This Week" />
+        <item
+            android:id="@+id/animes"
+            android:icon="@drawable/ic_top_airing"
+            android:title="List Anime" />
+        <item
+            android:id="@+id/search_anime"
+            android:icon="@drawable/ic_action_action_search"
+            android:title="Search Anime" />
+
+    </group>
+        </menu>
+    </item>
+
+    <item android:title="Mangas">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                android:id="@+id/nav_trending_manga"
+                android:icon="@drawable/ic_trending_this_week"
+                android:title="Trending This Week" />
+            <item
+                android:id="@+id/mangas"
+                android:icon="@drawable/ic_top_airing"
+                android:title="List Mangas" />
+            <item
+                android:id="@+id/search_manga"
+                android:icon="@drawable/ic_action_action_search"
+                android:title="Search Manga" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

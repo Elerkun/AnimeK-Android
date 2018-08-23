@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Log out"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_search"
+        android:actionLayout="@drawable/ic_action_action_search"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_action_search"
+        android:orderInCategory="100"
+        android:title="@string/abc_search_hint"
+        android:visible="true"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/action_category"
+        android:orderInCategory="100"
+        android:title="Categories"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_user_configuration"
+        android:orderInCategory="100"
+        android:title="Profile Configuration"
+        app:showAsAction="never" />
+
+
+</menu>

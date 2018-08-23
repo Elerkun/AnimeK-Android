@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_cursor_white">
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+
+     <ImageView
+         android:id="@+id/imageView3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         app:srcCompat="@drawable/animelogo" />
+
+     <com.baoyz.widget.PullRefreshLayout
+         android:id="@+id/swipeRefreshLayout"
+         android:layout_width="386dp"
+         android:layout_height="151dp"
+         android:layout_alignEnd="@+id/imageView3"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentStart="true"
+         android:layout_alignTop="@+id/imageView3"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.966">
+
+         <android.support.v7.widget.RecyclerView
+             android:id="@+id/recycling_view_search"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentStart="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginTop="47dp"
+             android:layout_weight="1"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.0"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="1.0">
+
+         </android.support.v7.widget.RecyclerView>
+     </com.baoyz.widget.PullRefreshLayout>
+
+ </RelativeLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/color_cursor_white"
+        android:baselineAligned="false">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
