@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "435963218642",
+    "firebase_url": "https://myapplication2-8514b.firebaseio.com",
+    "project_id": "myapplication2-8514b",
+    "storage_bucket": "myapplication2-8514b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435963218642:android:4c2dbf3f51a53823",
+        "android_client_info": {
+          "package_name": "com.example.falle.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435963218642-imietslosig3natl1o57c88l87spfqt2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.falle.myapplication",
+            "certificate_hash": "03cad720cc761628b46d81f54a441cf9854dd865"
+          }
+        },
+        {
+          "client_id": "435963218642-scqvnuo09l303pbvk7vv8uhuooleht0s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.falle.myapplication",
+            "certificate_hash": "773e2048554946568f367af1813b3a70ed69b5fd"
+          }
+        },
+        {
+          "client_id": "435963218642-12o9uv2uc156s9b0el2nc9duj8m7kb0o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCST7d1gam1Sye5o4iCpsICKyMIu_F-D7A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435963218642-12o9uv2uc156s9b0el2nc9duj8m7kb0o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

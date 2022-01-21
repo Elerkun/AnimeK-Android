@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_store"
+        android:layout_width="332dp"
+        android:layout_height="361dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+        card_view:cardMaxElevation="1dp"
+        card_view:cardPreventCornerOverlap="false">
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="316dp"
+            android:layout_height="114dp"
+            card_view:srcCompat="@drawable/animelogo" />
+
+        <TextView
+            android:id="@+id/anime_store"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="150dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nombre_personaje"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/precio" />
+
+        <LinearLayout
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="200dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tipo_figura"
+                android:layout_width="165dp"
+                android:layout_height="53dp"
+                android:layout_marginEnd="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/precio"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/precio"
+                android:layout_width="165dp"
+                android:layout_height="53dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toTopOf="@+id/anime_store"
+                app:layout_constraintEnd_toStartOf="@+id/tipo_figura"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="152dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="200dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Cantidad"
+                android:layout_width="165dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="16dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/nombre_personaje"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/anime_store"
+                android:layout_weight="1"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/anime_store"
+                app:layout_constraintTop_toBottomOf="@+id/tipo_figura" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
